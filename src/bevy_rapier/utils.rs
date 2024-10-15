@@ -1,7 +1,7 @@
 use bevy::prelude::*;
 use bevy_mod_billboard::BillboardMeshHandle;
 
-use crate::{BorderSelect, Selected, Tank};
+use super::components::{BorderSelect, Selected, Tank};
 
 pub struct UtilsPlugin;
 

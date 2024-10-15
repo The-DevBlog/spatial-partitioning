@@ -2,10 +2,10 @@ use bevy::{prelude::*, window::PrimaryWindow};
 use bevy_rapier3d::{pipeline::QueryFilter, plugin::RapierContext};
 use bevy_rts_camera::RtsCamera;
 
-use crate::{
+use super::{
+    components::{MapBase, Selected, Tank},
     resources::{BoxCoords, CursorState, CustomCursor, GameCommands, MouseCoords},
     tanks::set_unit_destination,
-    MapBase, Selected, Tank,
 };
 
 pub struct MousePlugin;

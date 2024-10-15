@@ -2,10 +2,14 @@ use bevy::prelude::*;
 use bevy_mod_billboard::{BillboardTextureBundle, BillboardTextureHandle};
 use bevy_rapier3d::{plugin::RapierContext, prelude::*};
 
-use crate::{
+use crate::{SPEED_QUANTIFIER, TANK_COUNT, TANK_SPEED};
+
+use super::{
+    components::{
+        Action, BorderSelect, CurrentAction, Destination, Friendly, Selected, Speed, Tank,
+        UnitBundle,
+    },
     resources::{GameCommands, MouseCoords, MyAssets},
-    Action, BorderSelect, CurrentAction, Destination, Friendly, Selected, Speed, Tank, UnitBundle,
-    SPEED_QUANTIFIER, TANK_COUNT, TANK_SPEED,
 };
 
 pub struct TanksPlugin;
