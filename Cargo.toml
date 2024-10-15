@@ -1,0 +1,22 @@
+[package]
+name = "spatial_partitioning"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14.2"
+bevy-inspector-egui = "0.26.0"
+bevy_mod_billboard = "0.7.0"
+bevy_rapier3d = "0.27.0"
+bevy_rts_camera = "0.8.1"
+
+[profile.dev.package.bevy_rapier3d]
+opt-level = 3
+
+[profile.dev]
+codegen-units = 1
+opt-level = 3
+
+[profile.release]
+codegen-units = 1
+opt-level = 3
