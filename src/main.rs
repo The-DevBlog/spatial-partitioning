@@ -1,6 +1,8 @@
 mod bevy_rapier;
+mod rapier;
 
 use bevy_rapier::BevyRapierPlugin;
+use rapier::RapierPlugin;
 
 use bevy::prelude::*;
 
@@ -13,7 +15,8 @@ fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins,
-            BevyRapierPlugin,
+            // BevyRapierPlugin,
+            RapierPlugin,
             // WorldInspectorPlugin::new(),
         ))
         .run();
